@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc">
+  <title id="title">Campus Security Operations 개념도</title>
+  <desc id="desc">캠퍼스 네트워크와 서비스에서 관제 플랫폼까지 이어지는 개념적 데이터 흐름</desc>
+  <defs>
+    <linearGradient id="back" x2="1" y2="1"><stop stop-color="#f4f9fc"/><stop offset="1" stop-color="#eaf5f5"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#123954" flood-opacity=".1"/></filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 9 4.5 0 9Z" fill="#3f8697"/></marker>
+  </defs>
+  <rect width="1200" height="610" rx="20" fill="url(#back)"/>
+  <text x="54" y="60" fill="#13364f" font-family="Arial,sans-serif" font-size="25" font-weight="700">Infrastructure to Security Operations</text>
+  <text x="54" y="88" fill="#5a7889" font-family="Arial,sans-serif" font-size="15">보고서 주요 구성 요소를 단순화한 개념도</text>
+  <g filter="url(#shadow)" font-family="Arial,sans-serif">
+    <rect x="54" y="142" width="322" height="332" rx="18" fill="#fff"/>
+    <rect x="54" y="142" width="322" height="58" rx="18" fill="#123b5a"/><path d="M54 182h322v18H54z" fill="#123b5a"/>
+    <text x="81" y="179" fill="#fff" font-size="20" font-weight="700">01  Campus infrastructure</text>
+    <text x="81" y="236" fill="#163b52" font-size="18" font-weight="700">본교 · 분교 네트워크</text>
+    <text x="81" y="266" fill="#4e7080" font-size="15">VLAN · Routing · VPN</text>
+    <line x1="81" y1="286" x2="349" y2="286" stroke="#dbe8ec"/>
+    <text x="81" y="322" fill="#163b52" font-size="18" font-weight="700">학사 · 메일 · 파일 서비스</text>
+    <text x="81" y="352" fill="#4e7080" font-size="15">Web · DB · Mail · Storage</text>
+    <line x1="81" y1="373" x2="349" y2="373" stroke="#dbe8ec"/>
+    <text x="81" y="409" fill="#163b52" font-size="18" font-weight="700">접근 통제 · 가용성</text>
+    <text x="81" y="439" fill="#4e7080" font-size="15">Firewall · ACL · HA · Backup</text>
+
+    <rect x="438" y="142" width="322" height="332" rx="18" fill="#fff"/>
+    <rect x="438" y="142" width="322" height="58" rx="18" fill="#167888"/><path d="M438 182h322v18H438z" fill="#167888"/>
+    <text x="465" y="179" fill="#fff" font-size="20" font-weight="700">02  Signals &amp; validation</text>
+    <text x="465" y="236" fill="#163b52" font-size="18" font-weight="700">승인된 시나리오 검증</text>
+    <text x="465" y="266" fill="#4e7080" font-size="15">웹 · 메일 · 계정 · 네트워크</text>
+    <line x1="465" y1="286" x2="733" y2="286" stroke="#dbe8ec"/>
+    <text x="465" y="322" fill="#163b52" font-size="18" font-weight="700">이벤트 수집</text>
+    <text x="465" y="352" fill="#4e7080" font-size="15">rsyslog · Beats · IDS · WAF</text>
+    <line x1="465" y1="373" x2="733" y2="373" stroke="#dbe8ec"/>
+    <text x="465" y="409" fill="#163b52" font-size="18" font-weight="700">로그 정규화</text>
+    <text x="465" y="439" fill="#4e7080" font-size="15">시간 · 출처 · 사용자 · 서비스</text>
+
+    <rect x="822" y="142" width="322" height="332" rx="18" fill="#fff"/>
+    <rect x="822" y="142" width="322" height="58" rx="18" fill="#284f78"/><path d="M822 182h322v18H822z" fill="#284f78"/>
+    <text x="849" y="179" fill="#fff" font-size="20" font-weight="700">03  Security operations</text>
+    <text x="849" y="236" fill="#163b52" font-size="18" font-weight="700">로그 검색 · 상관분석</text>
+    <text x="849" y="266" fill="#4e7080" font-size="15">ELK · Splunk · Wazuh</text>
+    <line x1="849" y1="286" x2="1117" y2="286" stroke="#dbe8ec"/>
+    <text x="849" y="322" fill="#163b52" font-size="18" font-weight="700">운영 상태 관찰</text>
+    <text x="849" y="352" fill="#4e7080" font-size="15">Zabbix · Prometheus</text>
+    <line x1="849" y1="373" x2="1117" y2="373" stroke="#dbe8ec"/>
+    <text x="849" y="409" fill="#163b52" font-size="18" font-weight="700">증적 · 개선 과제</text>
+    <text x="849" y="439" fill="#4e7080" font-size="15">탐지 공백 · 정책 보완</text>
+  </g>
+  <path d="M385 306h42m342 0h42" stroke="#3f8697" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="54" y="514" width="1090" height="52" rx="13" fill="#dceef0"/>
+  <text x="599" y="547" text-anchor="middle" fill="#285b69" font-family="Arial,sans-serif" font-size="17" font-weight="700">Build → Observe → Correlate → Improve</text>
+</svg>
