@@ -23,9 +23,9 @@
 
 본교의 학사·연구·관리 영역과 분교, DMZ를 분리해 필요한 통신만 허용했습니다. 캠퍼스 간 경로에는 라우팅과 VPN을 적용하고, 주요 링크와 장비의 장애 전환을 시험했습니다.
 
-<img src="report-gallery/images/page-008-image-01.png" alt="보고서의 전체 캠퍼스 네트워크 논리 토폴로지" width="100%" />
+<img src="report-gallery/images/page-008-image-01.png" alt="전체 캠퍼스 네트워크 논리 토폴로지" width="100%" />
 
-<sub>▲ 전체 논리 토폴로지 · 보고서 8쪽</sub>
+<sub>▲ 전체 캠퍼스 네트워크의 논리 토폴로지</sub>
 
 구간별 구성과 라우팅 증적은 [네트워크 설계와 검증](docs/network-and-infrastructure.md)에서 볼 수 있습니다.
 
@@ -33,13 +33,13 @@
 
 학사 웹, 메일, 연구자료 공유와 데이터베이스를 배치했습니다. HAProxy, 게이트웨이·방화벽 이중화, 백업, Ansible 자동화를 적용하고 장애 시 경로와 서비스 상태를 확인했습니다.
 
-<img src="report-gallery/images/page-040-image-01.png" alt="보고서의 서버 물리 구성도" width="100%" />
+<img src="report-gallery/images/page-040-image-01.png" alt="서버 물리 구성도" width="100%" />
 
-<sub>▲ 서버 물리 구성도 · 보고서 40쪽</sub>
+<sub>▲ 학사·메일·자료 공유 서비스를 포함한 서버 물리 구성도</sub>
 
 <img src="report-gallery/images/page-062-image-01.png" alt="방화벽 장애 전환 구성과 상태 확인 화면" width="72%" />
 
-<sub>▲ 방화벽 Active/Standby 장애 전환 증적 · 보고서 62쪽</sub>
+<sub>▲ 방화벽 Active/Standby 장애 전환 구성</sub>
 
 서비스 흐름, 메일 검사, 접근 통제와 백업 증적은 [서비스 구축과 안정성](docs/services-and-resilience.md)에 정리했습니다.
 
@@ -47,9 +47,9 @@
 
 승인된 범위에서 피싱·계정 악용·웹 취약점·네트워크 가용성 침해 시나리오를 재현했습니다. 단계별 공격 경로와 수집된 증적을 대조하고, 취약점 조치와 남은 한계를 기록했습니다.
 
-<img src="report-gallery/images/page-145-image-01.png" alt="보고서의 공격 흐름과 캠퍼스 네트워크 경로" width="100%" />
+<img src="report-gallery/images/page-145-image-01.png" alt="모의해킹 공격 흐름과 캠퍼스 네트워크 경로" width="100%" />
 
-<sub>▲ 모의해킹 공격 흐름 · 보고서 145쪽</sub>
+<sub>▲ 모의해킹 시나리오의 공격 경로</sub>
 
 시나리오와 결과는 [모의해킹과 조치](docs/security-validation.md)에서 확인할 수 있습니다. 이 자료는 승인된 실습 환경에서 수행한 검증 기록입니다.
 
@@ -59,15 +59,15 @@
 
 <img src="report-gallery/images/page-206-image-01.png" alt="SIEM 수집 흐름도" width="100%" />
 
-<sub>▲ SIEM 로그 수집 흐름 · 보고서 206쪽</sub>
+<sub>▲ SIEM 로그 수집과 분석 흐름</sub>
 
 <img src="report-gallery/images/page-210-image-01.png" alt="자체 통합 관제 화면의 이벤트 목록" width="100%" />
 
-<sub>▲ 자체 관제 화면의 이벤트 목록 · 보고서 210쪽</sub>
+<sub>▲ 자체 관제 화면의 이벤트 목록</sub>
 
 <img src="report-gallery/images/page-233-image-02.png" alt="Zabbix 기반 인프라 상태 대시보드" width="100%" />
 
-<sub>▲ 인프라 상태 모니터링 · 보고서 233쪽</sub>
+<sub>▲ 인프라 상태 모니터링 화면</sub>
 
 제품별 탐지 화면과 운영 지표는 [통합 관제와 탐지 증적](docs/security-operations.md)에 묶었습니다.
 
@@ -89,6 +89,6 @@
 
 ## 보고서 원본 이미지
 
-이 README와 네 분야의 상세 문서에는 제공된 248쪽 결과 보고서에서 추출한 **이미지 363개를 내용에 맞는 위치에 사용**했습니다. 원본 파일을 쪽수와 순서대로 보존한 [전체 자료 목록](report-gallery/README.md)도 제공하며, 이미지에는 실습망 주소·계정명·이메일 주소·공격 로그가 그대로 표시될 수 있습니다. 별도 설치 파일과 인증정보 파일은 포함하지 않았습니다.
+이 README와 네 분야의 상세 문서에는 제공된 결과 자료에서 추출한 **이미지 363개를 내용에 맞는 위치에 사용**했습니다. [전체 이미지 안내](report-gallery/README.md)도 제공하며, 이미지에는 실습망 주소·계정명·이메일 주소·공격 로그가 그대로 표시될 수 있습니다. 보고서 PDF와 별도 설치 파일·인증정보 파일은 이 저장소에 포함하지 않았습니다.
 
 <div align="center"><sub>메가스터디 AI 캠퍼스 정보보안 전문가 과정 · 2026년 9월–10월</sub></div>
